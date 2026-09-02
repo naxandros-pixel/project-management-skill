@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 440" width="1000" height="440" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif">
+  <rect width="1000" height="440" fill="#FAF9F6"/>
+
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#6B6558"/>
+    </marker>
+    <marker id="arrowBack" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#A8A296"/>
+    </marker>
+    <marker id="arrowGate" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#B5502B"/>
+    </marker>
+  </defs>
+
+  <text x="45" y="46" font-size="21" font-weight="600" fill="#2B2A27">Task-driven development</text>
+  <text x="45" y="70" font-size="14" fill="#6B6558">No work without a task. No shipping without a yes.</text>
+
+  <!-- entry -->
+  <text x="45" y="126" font-size="13" fill="#6B6558">request →</text>
+  <text x="112" y="126" font-size="13" font-style="italic" fill="#2B2A27">no task? create it, decompose it</text>
+  <path d="M 118 134 L 118 168" stroke="#6B6558" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- columns -->
+  <g>
+    <rect x="45" y="180" width="152" height="66" rx="7" fill="#FFFFFF" stroke="#C9C4BA" stroke-width="1.4"/>
+    <text x="121" y="212" font-size="15" font-weight="600" text-anchor="middle" fill="#2B2A27">Backlog</text>
+    <text x="121" y="231" font-size="11.5" text-anchor="middle" fill="#8A8478">captured, not selected</text>
+
+    <rect x="256" y="180" width="152" height="66" rx="7" fill="#FFFFFF" stroke="#C9C4BA" stroke-width="1.4"/>
+    <text x="332" y="212" font-size="15" font-weight="600" text-anchor="middle" fill="#2B2A27">Ready</text>
+    <text x="332" y="231" font-size="11.5" text-anchor="middle" fill="#8A8478">ordered queue</text>
+
+    <rect x="467" y="180" width="152" height="66" rx="7" fill="#FFFFFF" stroke="#C9C4BA" stroke-width="1.4"/>
+    <text x="543" y="212" font-size="15" font-weight="600" text-anchor="middle" fill="#2B2A27">In progress</text>
+    <text x="543" y="231" font-size="11.5" text-anchor="middle" fill="#8A8478">branch exists · default 3</text>
+
+    <rect x="678" y="180" width="152" height="66" rx="7" fill="#FFFFFF" stroke="#C9C4BA" stroke-width="1.4"/>
+    <text x="754" y="212" font-size="15" font-weight="600" text-anchor="middle" fill="#2B2A27">In review</text>
+    <text x="754" y="231" font-size="11.5" text-anchor="middle" fill="#8A8478">owner tests it · default 6</text>
+
+    <rect x="889" y="180" width="66" height="66" rx="7" fill="#FFFFFF" stroke="#C9C4BA" stroke-width="1.4"/>
+    <text x="922" y="212" font-size="15" font-weight="600" text-anchor="middle" fill="#2B2A27">Done</text>
+    <text x="922" y="231" font-size="11.5" text-anchor="middle" fill="#8A8478">merged</text>
+  </g>
+
+  <!-- forward arrows -->
+  <path d="M 197 213 L 250 213" stroke="#6B6558" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+  <text x="226" y="172" font-size="11.5" text-anchor="middle" fill="#6B6558">no blockers</text>
+
+  <path d="M 408 213 L 461 213" stroke="#6B6558" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+  <text x="437" y="164" font-size="11.5" text-anchor="middle" fill="#6B6558">start —</text>
+  <text x="437" y="177" font-size="11.5" text-anchor="middle" fill="#6B6558">no asking</text>
+
+  <path d="M 619 213 L 672 213" stroke="#6B6558" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+  <text x="645" y="164" font-size="11.5" text-anchor="middle" fill="#6B6558">push,</text>
+  <text x="645" y="177" font-size="11.5" text-anchor="middle" fill="#6B6558">don't merge</text>
+
+  <path d="M 830 213 L 883 213" stroke="#B5502B" stroke-width="1.8" fill="none" marker-end="url(#arrowGate)"/>
+  <text x="856" y="164" font-size="11.5" font-weight="600" text-anchor="middle" fill="#B5502B">owner</text>
+  <text x="856" y="177" font-size="11.5" font-weight="600" text-anchor="middle" fill="#B5502B">says yes</text>
+
+  <!-- backward arrows -->
+  <path d="M 754 248 L 754 292 L 543 292 L 543 250" stroke="#A8A296" stroke-width="1.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arrowBack)"/>
+  <text x="649" y="309" font-size="11.5" text-anchor="middle" fill="#8A8478">changes requested</text>
+
+  <path d="M 543 248 L 543 348 L 121 348 L 121 250" stroke="#A8A296" stroke-width="1.5" fill="none" stroke-dasharray="5 4" marker-end="url(#arrowBack)"/>
+  <text x="332" y="365" font-size="11.5" text-anchor="middle" fill="#8A8478">blocked — say what would clear it</text>
+
+  <!-- footer -->
+  <line x1="45" y1="392" x2="955" y2="392" stroke="#E2DED5" stroke-width="1"/>
+  <text x="45" y="416" font-size="12" fill="#8A8478">Review means acceptance by the owner, not code review. Limits are soft: a full column is a reminder, never a refusal to work.</text>
+</svg>
