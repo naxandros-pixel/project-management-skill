@@ -47,7 +47,7 @@ tier.
 **Claude Code.** Clone into your skills directory:
 
 ```bash
-git clone https://github.com/naxandros-pixel/project-management-skill.git ~/.claude/skills-src
+git clone https://github.com/serge-it-max/project-management-skill.git ~/.claude/skills-src
 ln -s ~/.claude/skills-src/skills/* ~/.claude/skills/
 ```
 
