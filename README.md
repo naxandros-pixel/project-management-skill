@@ -1,6 +1,6 @@
 # Task-driven Claude skills
 
-Three [Agent Skills](https://docs.claude.com/en/docs/agents-and-tools/agent-skills/overview)
+Three [Agent Skills](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
 that make Claude work the way a project manager would. Nothing gets built without a task on
 the board, and nothing ships without the owner's yes.
 
@@ -22,7 +22,7 @@ assumes.
 
 ## What changes in practice
 
-**A task exists before the code does.** If no task exists, Claude creates and decomposes
+**A task exists before the work starts.** If no task exists, Claude creates and decomposes
 one before implementing anything. Untracked work stays invisible to everyone else, and
 nobody can review it.
 
@@ -54,7 +54,6 @@ ln -s ~/.claude/skills-src/skills/* ~/.claude/skills/
 Or copy a single skill folder into `.claude/skills/` inside one project.
 
 **Claude.ai.** Zip a skill folder and upload it in Settings → Capabilities → Skills.
-Prebuilt `.skill` bundles are attached to each release.
 
 ## Adapting them to your project
 
