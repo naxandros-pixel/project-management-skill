@@ -169,7 +169,7 @@ Translate the heading and body into the project's own language, matching the res
 file. This does not replace the skill body. It only guarantees the skill gets loaded, and
 the skill's own steps still decide what happens next.
 
-**Add a hard gate, beyond a pointer.** Measured on a real project (igorski-site,
+**Add a hard gate, beyond a pointer.** Measured on a real project (with
 24 other skills installed): with the paragraph above already in place, `Skill(task-driven-
 development)` still fired in only 10 of 14 independent sessions (≈71%), with no reliable
 pattern by phrasing. A vague fix request missed twice in a row, while a request naming an
